@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { DataStore } from "@aws-amplify/datastore";
 import { Stations } from "../src/models";
-import awsExports from "../src/aws-exports";
-DataStore.configure(awsExports);
 
 export default function Home() {
   const [stations, setStations] = useState([]);
