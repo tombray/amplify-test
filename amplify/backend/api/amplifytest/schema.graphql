@@ -1,4 +1,5 @@
-type Stations @model @auth(rules: [{allow: public}]) {
+type Stations @model @auth(rules: [{allow: public, operations: [read]}]) {
   id: ID!
   name: String
 }
+ 
